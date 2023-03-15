@@ -4,7 +4,7 @@ export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-${props.mode} bg-${props.mode}`}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">{props.title}</a>
+    <a className="navbar-brand" href="#"><strong>Nandini </strong></a>
    
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
