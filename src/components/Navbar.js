@@ -1,17 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 export default function Navbar(props) {
+  const nandu=(msg,type)=>{
+      props.showAlert(msg,type);
+  }
   return (
     <nav className={`navbar navbar-${props.mode} bg-${props.mode}`}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="#"><strong>Nandini </strong></a>
+    <a className="navbar-brand" onClick={()=>{
+      nandu("Nandu dont touch your self.","danger");
+    }} href="#"><strong>Nandini </strong></a>
    
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-a active" aria-current="page" href="#">Home</a>
+          <a className="nav-a active" onClick={()=>{
+      nandu("Nandu is there in Home eeeeeeee.....","warning");
+    }} aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-a" href="#"> About</a>
+          <a className="nav-a" onClick={()=>{
+      nandu("Nandu nothing to say about this app.... because its nothing.","success");
+    }} href="#"> About</a>
         </li>
       </ul>
       {/* <form className="d-flex" role="search">
